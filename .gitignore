@@ -7,8 +7,4 @@ bin
 #Maven
 target
 release.properties
-pom.xml.*
-
-#Other
-.vagrant
-.checkstyle
+pom.xml
