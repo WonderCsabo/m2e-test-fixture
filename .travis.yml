@@ -9,8 +9,8 @@ env:
 
 before_install:
   - sudo apt-get -y install vnc4server
-  - vnc4server -geometry 1280x768 -depth 24 -dpi 80
+  - echo 'password' | vnc4server -geometry 1280x768 -depth 24 -dpi 80
 
 before_script:
-  - export DISPLAY=:99.0
+  - export DISPLAY=:1.0
 script: mvn -e --file me.gladwell.m2e.test/pom.xml -Dtarget.platform=$TARGET_PLATFORM -Dtycho.showEclipseLog=true verify
