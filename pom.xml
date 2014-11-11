@@ -42,7 +42,7 @@
           <pomDependencies>consider</pomDependencies>
           <target>
             <artifact>
-              <groupId>me.gladwell.eclipse.m2e.android</groupId>
+              <groupId>me.gladwell.m2e</groupId>
               <artifactId>${target.platform}</artifactId>
               <version>${project.version}</version>
             </artifact>

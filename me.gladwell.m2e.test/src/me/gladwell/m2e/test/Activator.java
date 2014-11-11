@@ -14,7 +14,7 @@ import org.osgi.framework.BundleContext;
 
 public class Activator extends AbstractUIPlugin implements IStartup {
 
-    public static final String PLUGIN_ID = "me.gladwell.eclipse.m2e.android.test";
+    public static final String PLUGIN_ID = "me.gladwell.m2e.test";
 
     private static Activator plugin;
 
