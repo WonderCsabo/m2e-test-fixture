@@ -14,7 +14,7 @@
   <packaging>eclipse-test-plugin</packaging>
 
   <properties>
-    <vmargs>-XX:MaxPermSize=3g -Xmx3g</vmargs>
+    <vmargs>-XX:MaxPermSize=3g -Xmx3g -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=80</vmargs>
   </properties>
 
   <profiles>
