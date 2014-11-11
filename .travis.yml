@@ -12,4 +12,5 @@ before_install:
 
 before_script:
   - export DISPLAY=:99.0
+
 script: mvn -e --file me.gladwell.m2e.test/pom.xml -Dtarget.platform=$TARGET_PLATFORM -Dtycho.showEclipseLog=true verify
