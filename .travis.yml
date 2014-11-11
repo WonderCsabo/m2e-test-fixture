@@ -4,7 +4,6 @@ rvm:
   - 1.9.3
 
 before_install:
-  - sudo apt-get install linux-headers-$(uname -r)
   - sudo apt-get install -qq virtualbox-ose vagrant 
 
 script: vagrant up
