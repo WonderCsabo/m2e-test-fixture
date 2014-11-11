@@ -14,7 +14,7 @@
   <packaging>eclipse-test-plugin</packaging>
 
   <properties>
-    <vmargs>-XX:MaxPermSize=3g -Xmx3g -XX:ErrorFile=~/jvm.log</vmargs>
+    <vmargs>-XX:MaxPermSize=3g -Xmx3g -XX:ErrorFile=~/jvm.log -XX:OnOutOfMemoryError="echo OOM"</vmargs>
   </properties>
 
   <profiles>
