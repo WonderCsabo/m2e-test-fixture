@@ -7,10 +7,8 @@ env:
     - TARGET_PLATFORM=kepler
     - TARGET_PLATFORM=luna
 
-before_install:
-  - sh -e /etc/init.d/xvfb start
-
 before_script:
+  - sh -e /etc/init.d/xvfb start
   - export DISPLAY=:99.0
 
 script: mvn -e --file me.gladwell.m2e.test/pom.xml -Dtarget.platform=$TARGET_PLATFORM -Dtycho.showEclipseLog=true verify
